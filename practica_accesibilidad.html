@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -80,7 +80,7 @@
         </tbody>
         <tfoot>
           <tr id="total">
-            <td colspan="3" align="right">
+            <td colspan="3">
               <strong>Precio Total</strong>
             </td>
             <td>242,97 €</td>
@@ -103,81 +103,83 @@
 
     <section id="datos">
 
-      <h3 class="t2">Datos de facturación</h <p class="info">
+      <h3 class="t2">Datos de facturación</h3>
+      <p class="info">
         <span class="i">i</span> Los campos marcados en rojo son obligatorios.
-        </p>
+      </p>
 
-        <form action="#" method="post">
-          <fieldset>
+      <form action="#" method="post">
+        <fieldset>
 
-            <div id="datos_personales">
-              <legend class="t3">Datos personales</legend>
-              <div class="campo_form">
-                <label for="empresa">Empresa </label>
-                <input id="empresa" name="empresa" type="text" tabindex="1" accesskey="E">
-              </div>
-              <div class="campo_form">
-                <label for="nombre" class="obligatorio">Nombre </label>
-                <input id="nombre" name="nombre" type="text" tabindex="2" accesskey="N">
-              </div>
-              <div class="campo_form">
-                <label for="apellidos" class="obligatorio">Apellidos </label>
-                <input id="apellidos" name="apellidos" type="text" tabindex="3" accesskey="A">
-              </div>
-              <div class="campo_form">
-                <label for="email" class="obligatorio">e-mail </label>
-                <input id="email" name="email" type="text" tabindex="4" accesskey="M">
-              </div>
-              <div class="campo_form">
-                <label for="tlf" class="obligatorio">Tlf. de contacto </label>
-                <input id="tlf" name="tlf" type="text" tabindex="5" accesskey="T">
-              </div>
-              <div class="campo_form">
-                <label for="nif">NIF/CIF </label>
-                <input id="nif" name="nif" type="text" tabindex="6" accesskey="I">
-              </div>
+          <div id="datos_personales">
+            <p class="t3">Datos personales</p>
+            <div class="campo_form">
+              <label for="empresa">Empresa </label>
+              <input id="empresa" name="empresa" type="text" tabindex="1" accesskey="E">
             </div>
+            <div class="campo_form">
+              <label for="nombre" class="obligatorio">Nombre </label>
+              <input id="nombre" name="nombre" type="text" tabindex="2" accesskey="N">
+            </div>
+            <div class="campo_form">
+              <label for="apellidos" class="obligatorio">Apellidos </label>
+              <input id="apellidos" name="apellidos" type="text" tabindex="3" accesskey="A">
+            </div>
+            <div class="campo_form">
+              <label for="email" class="obligatorio">e-mail </label>
+              <input id="email" name="email" type="text" tabindex="4" accesskey="M">
+            </div>
+            <div class="campo_form">
+              <label for="tlf" class="obligatorio">Tlf. de contacto </label>
+              <input id="tlf" name="tlf" type="text" tabindex="5" accesskey="T">
+            </div>
+            <div class="campo_form">
+              <label for="nif">NIF/CIF </label>
+              <input id="nif" name="nif" type="text" tabindex="6" accesskey="I">
+            </div>
+          </div>
 
-            <div id="datos_envio">
-              <legend class="t3">Datos de envío</legend>
-              <div class="campo_form">
-                <label for="dir" class="obligatorio">Dirección </label>
-                <input id="dir" name="dir" type="text" tabindex="7" accesskey="D">
-              </div>
-              <div class="campo_form">
-                <label for="localidad" class="obligatorio">Localidad </label>
-                <input id="localidad" name="localidad" type="text" tabindex="8" accesskey="L">
-              </div>
-              <div class="campo_form">
-                <label for="provincia" class="obligatorio">Provincia </label>
-                <input id="provincia" name="provincia" type="text" tabindex="9" accesskey="P">
-              </div>
-              <div class="campo_form">
-                <label for="cp" class="obligatorio">CP </label>
-                <input id="cp" name="cp" type="text" tabindex="10" accesskey="C">
-              </div>
-              <div class="campo_form">
-                <label for="horario">Horario de entrega </label>
+          <div id="datos_envio">
+            <p class="t3">Datos de envío</p>
+            <div class="campo_form">
+              <label for="dir" class="obligatorio">Dirección </label>
+              <input id="dir" name="dir" type="text" tabindex="7" accesskey="D">
+            </div>
+            <div class="campo_form">
+              <label for="localidad" class="obligatorio">Localidad </label>
+              <input id="localidad" name="localidad" type="text" tabindex="8" accesskey="L">
+            </div>
+            <div class="campo_form">
+              <label for="provincia" class="obligatorio">Provincia </label>
+              <input id="provincia" name="provincia" type="text" tabindex="9" accesskey="P">
+            </div>
+            <div class="campo_form">
+              <label for="cp" class="obligatorio">CP </label>
+              <input id="cp" name="cp" type="text" tabindex="10" accesskey="C">
+            </div>
+            <div class="campo_form">
+              <label>Horario de entrega
                 <select name="horario" tabindex="11" accesskey="H">
                   <option selected="selected" value="all">Todo el día</option>
                   <option value="a">De 9:00 a 14:00 horas</option>
                   <option value="b">De 14:00 a 19:00 horas</option>
                 </select>
-              </div>
-            </div>
-
-            <div id="observaciones">
-              <label>Observaciones:
-                <br>
-                <textarea rows="6" cols="80" id="obs" name="obs" tabindex="12" accesskey="O"></textarea>
               </label>
             </div>
+          </div>
 
-            <p id="submit">
-              <input value="Realizar Pedido" type="submit" tabindex="13" accesskey="R">
-            </p>
-          </fieldset>
-        </form>
+          <div id="observaciones">
+            <label>Observaciones:
+              <br>
+              <textarea rows="6" cols="80" id="obs" name="obs" tabindex="12" accesskey="O"></textarea>
+            </label>
+          </div>
+
+          <p id="submit">
+            <input value="Realizar Pedido" type="submit" tabindex="13" accesskey="R">
+          </p>
+        </fieldset>
+      </form>
 
 
     </section>
@@ -253,7 +255,7 @@
 
 
       <br>
-      </p>
+
       <p class="t3">
         <!--
 ************************************************
@@ -268,7 +270,7 @@
       <p id="pie"> 2016 La Aceitera. 37008 Salamanca</p>
     </footer>
 
-
+  </div>
 
 
 </body>
